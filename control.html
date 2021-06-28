@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Control</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    
+  </head>
+  <body>
+        <script>
+                function showValue(newValue , num)
+                {
+                    switch(num){
+                        case 1:
+                        document.getElementById("range1").innerHTML=newValue;
+                        break;
+
+                        case 2:
+                        var output = document.getElementById("range2");
+                        output.innerHTML=newValue;
+                        break;
+
+                        case 3:
+                        var output = document.getElementById("range3");
+                        output.innerHTML=newValue;
+                        break;
+
+                        case 4:
+                        var output = document.getElementById("range4");
+                        output.innerHTML=newValue;
+                        break;
+
+                        case 5:
+                        var output = document.getElementById("range5");
+                        output.innerHTML=newValue;
+                        break;
+
+                        case 6:
+                        var output = document.getElementById("range6");
+                        output.innerHTML=newValue;
+                        break;
+
+                    }
+                    
+                }
+                </script>
+        <div id="wrapper"> 
+            
+                <form name = "Actuators" id = "Actuators" action="process.php" method="POST">
+
+                    <div id="forms"> 
+                    <text><b> Actuator1 </b></text> <input id="Actuator1"  type="range" name="Actuator1" min="0" max="100" step="1" value="0" onchange="showValue(Actuator1.value , 1)" />
+                    <span id="range1">0</span>
+                </br>
+
+                    <text><b> Actuator2 </b></text> <input id="Actuator2"  type="range" name="Actuator2" min="0" max="100" step="1" value="0" onchange="showValue(Actuator2.value ,2)" />
+                    <span id="range2">0</span>
+                </br>
+                    <text><b> Actuator3 </b></text> <input id="Actuator3"  type="range" name="Actuator3" min="0" max="100"  step="1" value="0" onchange="showValue(this.value ,3)" />
+                    <span id="range3">0</span>
+                </br>
+                    <text><b> Actuator4 </b></text> <input id="Actuator4"  type="range" name="Actuator4" min="0" max="100"  step="1" value="0" onchange="showValue(this.value ,4)" />
+                    <span id="range4">0</span>
+                </br>
+                    <text><b> Actuator5 </b></text> <input id="Actuator5"  type="range" name="Actuator5" min="0" max="100"  step="1" value="0" onchange="showValue(this.value ,5)" />
+                    <span id="range5">0</span>
+                </br>
+                    <text><b> Actuator6 </b></text> <input id="Actuator6"  type="range" name="Actuator6" min="0" max="100"  step="1" value="0" onchange="showValue(this.value ,6)" />
+                    <span id="range6">0</span>
+                </br>
+            </div> 
+                
+            
+
+            <div id="buttons"> 
+                <input type="submit" id="save" name="save" value="save"/>
+                <input type="submit" id="play" name="play" value="play"/>
+            </div> 
+        </form>
+            </div> 
+
+ 
+  </body>
+</html>
