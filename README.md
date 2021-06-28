@@ -3,7 +3,8 @@ Design the front end and back end to control the robot arm remotely. To design t
 
 ## To execute this project 
 Assuming that you have downloaded the iot file and place it in htdocs folder. Execute it with the full path: 
-      localhost/iot/control.html
+
+    localhost/iot/control.html
       
 ## usage 
 
