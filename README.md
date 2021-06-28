@@ -1,7 +1,8 @@
 # robot-arm-control-interface
 Design the front end and back end to control the robot arm remotely. To design the front end I used HTML, JavaScript, CSS. and to design the back end I used PHP, and phpMyAdmin. The webpage help the user to control the circling degree of each actuator in the robot arm. By using the slider to decide the actuator's value. Then save these values in the database called robotArmControl. in a simple table called control.
 
-## To execute this project -> execute it with the full path 
+## To execute this project 
+Assuming that you have downloaded the iot file and place it in htdocs folder. Execute it with the full path: 
       localhost/iot/control.html
       
 ## usage 
